@@ -8,6 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class Person {
 
+  //PROPERTIES
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   public Integer id;
@@ -15,6 +16,7 @@ public class Person {
   public String  lastName;
   public Integer age;
 
+  //CONSTRUCTORS
   public Person() {}
   public Person(String name, String lastName, Integer age) {
     this.name     = name;
