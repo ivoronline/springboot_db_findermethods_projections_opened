@@ -14,9 +14,9 @@ public class MyController {
   //================================================================
   // FIND PERSON VIEW BY NAME
   //================================================================
-  @RequestMapping("FindViewByName")
-  PersonView findViewByName() {
-    PersonView personView = personRepository.findViewByName("John");
+  @RequestMapping("FindPersonViewByName")
+  PersonView findPersonViewByName() {
+    PersonView personView = personRepository.findPersonViewByName("John");
     return     personView;
   }
 

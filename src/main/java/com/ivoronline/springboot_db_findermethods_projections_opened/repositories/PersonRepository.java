@@ -4,7 +4,7 @@ import com.ivoronline.springboot_db_findermethods_projections_opened.entities.Pe
 import org.springframework.data.repository.CrudRepository;
 
 public interface PersonRepository extends CrudRepository<Person, Integer> {
-  PersonView findViewByName(String name);
+  PersonView findPersonViewByName(String name);
 }
 
 
