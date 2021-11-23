@@ -12,14 +12,14 @@ public class Person {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   public Integer id;
-  public String  name;
+  public String  firstName;
   public String  lastName;
   public Integer age;
 
   //CONSTRUCTORS
   public Person() {}
-  public Person(String name, String lastName, Integer age) {
-    this.name     = name;
+  public Person(String firstName, String lastName, Integer age) {
+    this.firstName = firstName;
     this.lastName = lastName;
     this.age      = age;
   }
